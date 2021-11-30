@@ -7,6 +7,7 @@
     <title>Sidebar From Scratch</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div id="wrapper">
       <!-- Menu Button -->
@@ -46,18 +47,18 @@
       </div>
     </div>
 
+
     <script>
-      document.querySelector(".menuButton")
-        .addEventListener("click", function () {
-          document.querySelector(".sidebar").style.width = "100%";
-          document.querySelector(".sidebar").style.zIndex = "5";
+        document.querySelector(".menuButton").addEventListener("click", function () {
+            document.querySelector(".sidebar").style.width = "100%";
+            document.querySelector(".sidebar").style.zIndex = "5";
         });
 
-      document.querySelector(".closeButton")
-        .addEventListener("click", function () {
-          document.querySelector(".sidebar").style.width = "0";
+        document.querySelector(".closeButton").addEventListener("click", function () {
+            document.querySelector(".sidebar").style.width = "0";
         });
     </script>
+
   </body>
 </html>
 
